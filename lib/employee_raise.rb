@@ -1,0 +1,2 @@
+class EmployeeRaise
+end

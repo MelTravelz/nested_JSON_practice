@@ -1,0 +1,44 @@
+{
+  "data": 
+  {
+    "Boss" : "John",
+    "Department" : "Finance",
+    "Department id": 3,
+    "employees":[
+        {
+          "name":"Shaun",
+          "age": 30,
+          "salary": {
+            "year1": 45000,
+            "year2": 54000,
+            "year3": 60000
+          }
+        },
+        {
+          "name":"Paul",
+          "age" : 27,
+          "salary": {
+            "year1": 32500
+          }
+        },
+        {
+          "name":"Mel",
+          "age" : 27,
+          "salary": {
+            "year1": 75525,
+            "year2": 80000,
+            "year3": 86250,
+            "year4": 90000
+          }
+        },
+        {
+          "name":"Jasmine",
+          "age" : 27,
+          "salary": {
+            "year1": 75500,
+            "year2": 80000
+          }
+        }
+    ]
+  }
+}

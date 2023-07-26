@@ -1,9 +1,9 @@
-require './lib/employee_raise'
+require './lib/employee_raise_incrementor'
 
-describe EmployeeRaise do
-  subject(:employee_raise) { described_class.new }
+describe EmployeeRaiseIncrementor do
+  subject(:employee_raise_incrementor) { described_class.new }
 
-  describe '#give_raise' do
+  describe '#call' do
      it 'gives a 5% raise to employees making $70,000 or more and a 10% raise to employees making less than $70,000 and returns a hash with each employee name and new salary' do
       expected_hash = {
         "Shaun" => 66000,
@@ -12,7 +12,9 @@ describe EmployeeRaise do
         "Jasmine" => 84000
       }
 
-      expect(employee_raise.give_raise).to eq(expected_hash)
+      expect(employee_raise_incrementor.call).to eq(expected_hash)
     end
   end
 end
+
+# This renaming of class & method follows single reponsibility principle better 
